@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="238.0" style="-fx-background-color: white;" styleClass="item-game" stylesheets="@GamesStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.PostcardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="373.0" stroke="#d7b14a" strokeType="INSIDE" strokeWidth="5.0" width="238.0" />
+      <ImageView fx:id="imagepost" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="tfnom_user" layoutX="19.0" layoutY="10.0" prefHeight="18.0" prefWidth="200.0" stylesheets="@style.css" text="Nom d'Utilisateur">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="tfsujet" layoutX="21.0" layoutY="58.0" prefHeight="15.0" prefWidth="200.0" stylesheets="@style.css" text="Nom Sujet">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="tfdescription" layoutX="22.0" layoutY="105.0" prefHeight="84.0" prefWidth="200.0" stylesheets="@style.css" text="Description du Sujet">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="tfcommunaute" layoutX="21.0" layoutY="79.0" prefHeight="15.0" prefWidth="200.0" stylesheets="@style.css" text="Catégorie">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="tfdatepost" layoutX="19.0" layoutY="30.0" prefHeight="18.0" prefWidth="200.0" stylesheets="@style.css" text="Date du Forum">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="347.0" text="Appréciations:" />
+      <Label fx:id="tfnbr_jaime" layoutX="98.0" layoutY="347.0" text="x" />
+      <Label fx:id="idpostlabel" layoutX="39.0" layoutY="308.0" prefHeight="15.0" prefWidth="33.0" text="Label" visible="false">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="commentsButton" layoutX="149.0" layoutY="339.0" mnemonicParsing="false" onAction="#comentpostbtn" style="-fx-background-color: #D7B14A;" stylesheets="@style.css" text="Comments" textFill="#080808">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="labelimage" layoutX="62.0" layoutY="251.0" text="Image" visible="false" />
+   </children>
+</AnchorPane>

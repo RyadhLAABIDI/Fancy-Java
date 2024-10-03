@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.switch3">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane layoutX="2.0" layoutY="6.0" prefHeight="48.0" prefWidth="1000.0" style="-fx-background-color: #D7B14A;">
+               <children>
+                  <Label layoutX="343.0" layoutY="6.0" prefWidth="314.0" text="FANCY TRADE" textFill="#efefee">
+                     <font>
+                        <Font name="Monotype Corsiva" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label0" layoutX="14.0" layoutY="37.0" text="ECHANGE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="93.0" fitWidth="108.0" layoutX="885.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/lgooo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label6" layoutX="623.0" layoutY="124.0" prefHeight="33.0" prefWidth="369.0" text="Information du produit à échanger" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_confirmer" layoutX="380.0" layoutY="447.0" mnemonicParsing="false" onAction="#clikbtn_confirmer" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #D7B14A;" text="Confirmer" textFill="WHITE" />
+      <Label fx:id="label7" layoutX="42.0" layoutY="166.0" prefHeight="33.0" prefWidth="188.0" text="Categorie" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label8" layoutX="42.0" layoutY="211.0" prefHeight="33.0" prefWidth="188.0" text="Valeur" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="categorie" layoutX="150.0" layoutY="167.0" onAction="#email" prefHeight="31.0" prefWidth="423.0" />
+      <TextField fx:id="valeur" layoutX="149.0" layoutY="215.0" prefHeight="31.0" prefWidth="423.0" />
+      <Button fx:id="btn_ajouter" layoutX="487.0" layoutY="447.0" mnemonicParsing="false" onAction="#clickbtn_ajouter" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #D7B14A;" text="Ajouter" textFill="WHITE" />
+      <TableView fx:id="tab_user" layoutX="42.0" layoutY="286.0" prefHeight="149.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="Col_iduser" prefWidth="117.0" text="ID_user" />
+          <TableColumn fx:id="Col_nom" prefWidth="103.0" text="Nom" />
+            <TableColumn fx:id="Col_prenom" prefWidth="111.0" text="Prenom" />
+            <TableColumn fx:id="Col_email" prefWidth="114.0" text="Email" />
+            <TableColumn fx:id="Col_numero" prefWidth="114.0" text="Numero" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tab_prod" layoutX="628.0" layoutY="167.0" prefHeight="269.0" prefWidth="358.0">
+         <columns>
+            <TableColumn fx:id="Col_idproduit" prefWidth="88.0" text="ID_produit" />
+            <TableColumn fx:id="Col_iduser" minWidth="0.0" prefWidth="97.0" text="ID_user" />
+            <TableColumn fx:id="Col_categorie" minWidth="0.0" prefWidth="89.0" text="Categorie" />
+            <TableColumn fx:id="Col_valeur" minWidth="0.0" prefWidth="113.0" text="Valeur" />
+         </columns>
+      </TableView>
+      <Label fx:id="label9" layoutX="-17.0" layoutY="256.0" prefHeight="17.0" prefWidth="278.0" text="           Echanger avec " textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_consulter" layoutX="832.0" layoutY="448.0" mnemonicParsing="false" onAction="#clikbtn_consulter" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #D7B14A;" text="Consulter historique" textFill="WHITE" />
+   </children>
+</AnchorPane>

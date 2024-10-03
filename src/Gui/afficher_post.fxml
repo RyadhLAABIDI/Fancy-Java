@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="746.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Afficher_postController">
+   <children>
+      <ListView fx:id="afficherpost" layoutX="6.0" layoutY="130.0" prefHeight="374.0" prefWidth="735.0" />
+      <Button fx:id="supprimer" layoutX="638.0" layoutY="516.0" mnemonicParsing="false" onAction="#supprimer_commentaire" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: #D7B14A;" text="supprimer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="6.0" layoutY="95.0" prefHeight="26.0" prefWidth="238.0" text="Liste des postes " textFill="#9e8a08" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="516.0" prefHeight="26.0" prefWidth="124.0" text="Selectionner un poste" textFill="#9e8a08" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="14.0" prefWidth="314.0" text="FANCY TRADE" textFill="#efefee">
+         <font>
+            <Font name="Monotype Corsiva" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="118.0" layoutX="635.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/lgooo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

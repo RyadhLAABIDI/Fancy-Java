@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="710.0" prefWidth="1040.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-59.0" layoutY="-14.0" prefHeight="739.0" prefWidth="1224.0" style="-fx-background-color: black;">
+               <children>
+                  <Button fx:id="Afficher" layoutX="415.0" layoutY="647.0" mnemonicParsing="false" onAction="#afficherReclamation" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #D7B14A; -fx-background-radius: 30;" text="Afficher">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.250980406999588" green="0.24705882370471954" blue="0.23137255012989044" />
+                                 </color></Stop>
+                              <Stop offset="0.5760869565217391">
+                                 <color>
+                                    <Color red="0.250980406999588" green="0.24705882370471954" blue="0.23137255012989044" />
+                                 </color></Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color></Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="415.0" layoutY="139.0" prefHeight="82.0" prefWidth="238.0" text="Interface Admin" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="supprimer" layoutX="534.0" layoutY="647.0" mnemonicParsing="false" onAction="#supprimerReclamation" prefHeight="40.0" prefWidth="114.0" style="-fx-background-color: #D7B14A; -fx-background-radius: 30;" text="Supprimer">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.18431372940540314" green="0.1764705926179886" blue="0.16862745583057404" />
+                                 </color></Stop>
+                              <Stop offset="0.18115942028985507">
+                                 <color>
+                                    <Color red="0.18431372940540314" green="0.1764705926179886" blue="0.16862745583057404" />
+                                 </color></Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color></Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="table" layoutX="415.0" layoutY="242.0" onMouseClicked="#getSelect" prefHeight="392.0" prefWidth="731.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="date" prefWidth="133.0" text="Date" />
+                        <TableColumn fx:id="type" prefWidth="148.0" text="Type" />
+                        <TableColumn fx:id="contenu" prefWidth="177.0" text="Contenu" />
+                        <TableColumn fx:id="objet" prefWidth="157.0" text="Objet" />
+                        <TableColumn fx:id="categorie" prefWidth="75.0" text="categorie" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="Retour" layoutX="1049.0" layoutY="647.0" mnemonicParsing="false" onAction="#RetourMenu" prefHeight="40.0" prefWidth="102.0" style="-fx-background-radius: 30; -fx-background-color: #D7B14A;" text="Retour">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.32549020648002625" blue="0.2666666805744171" />
+                                 </color></Stop>
+                              <Stop offset="0.15579710144927536">
+                                 <color>
+                                    <Color red="0.3294117748737335" green="0.32549020648002625" blue="0.2666666805744171" />
+                                 </color></Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color></Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="eChercher" layoutX="666.0" layoutY="154.0" prefHeight="40.0" prefWidth="347.0" promptText="Chercher une reclamation" style="-fx-background-radius: 30;" />
+                  <Button fx:id="bchercher" defaultButton="true" layoutX="1024.0" layoutY="154.0" mnemonicParsing="false" onAction="#Chercherevent" prefHeight="37.0" prefWidth="102.0" style="-fx-background-radius: 30; -fx-background-color: #D7B14A;" text="chercher">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color></Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color></Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+                  <Label layoutX="485.0" layoutY="14.0" prefHeight="83.0" prefWidth="522.0" text="FANCY TRADE" textFill="#efefee">
+                     <font>
+                        <Font name="Monotype Corsiva" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="172.0" fitWidth="174.0" layoutX="1116.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/lgooo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

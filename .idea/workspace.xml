@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf2ec95d-f091-42df-ac1e-ac818c762def" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/Afficher_voitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/Ajouter_voitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/Crud_voitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/Location_voitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/ModifiervoitureController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/afficher_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/ajouter_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/crud_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/interfacemodulelocation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/location_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/gui/modifiervoiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/interfaces/InterfaceCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/edu/webuild/interfaces/InterfaceCRUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/interfaces/InterfaceCRUD2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/edu/webuild/interfaces/InterfaceCRUD2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/model/reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/edu/webuild/model/reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/model/voiture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/services/reservationCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/edu/webuild/services/reservationCRUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/services/voitureCRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/edu/webuild/utils/MyConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/edu/webuild/utils/MyConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/webuild/Webuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/webuild/Webuild.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/Afficher_voitureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/Ajouter_voitureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/Crud_voitureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/Location_voitureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/ModifiervoitureController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/afficher_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/ajouter_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/crud_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/interfacemodulelocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/location_voiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/gui/modifiervoiture.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/interfaces/InterfaceCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/webuild/interfaces/InterfaceCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/model/voiture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/webuild/model/poste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/services/voitureCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/webuild/services/posteCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/webuild/utils/MyConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/webuild/utils/MyConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webuild/Webuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webuild/Webuild.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2M1GBAFA5X9ghptGM8abPDn0ewj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Nguira Azyz/Downloads/allocation"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf2ec95d-f091-42df-ac1e-ac818c762def" name="Changes" comment="" />
+      <created>1676927536327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676927536327</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

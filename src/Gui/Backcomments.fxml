@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.BackcommentsController">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="551.0" prefWidth="1055.0" style="-fx-background-color: #000000;" stylesheets="@style.css">
+         <children>
+            <TableView fx:id="tabPost" layoutX="14.0" layoutY="261.0" onMouseClicked="#handlepost" prefHeight="264.0" prefWidth="646.0">
+               <columns>
+                  <TableColumn fx:id="ColId" prefWidth="75.0" text="id" visible="false" />
+                  <TableColumn id="nom_user" fx:id="colnom_user" prefWidth="75.0" text="Utilisateur" />
+                  <TableColumn id="sujet" fx:id="Colsujet" prefWidth="75.0" text="Sujet" />
+                  <TableColumn id="description" fx:id="Coldescription" prefWidth="75.0" text="Description" />
+                  <TableColumn id="communaute" fx:id="Colcommunaute" prefWidth="88.00007629394531" text="Communauté" />
+                  <TableColumn id="image" fx:id="ColImage" prefWidth="62.39990234375" text="IMG URL" />
+                  <TableColumn id="image" fx:id="ColNbrj" prefWidth="95.199951171875" text="Appréciations" />
+                  <TableColumn id="date" fx:id="ColDatep" prefWidth="188.800048828125" text="Date de Creation de Post" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tvtabCom" layoutX="676.0" layoutY="215.0" onMouseClicked="#selectCom" prefHeight="200.0" prefWidth="378.0">
+               <columns>
+                  <TableColumn fx:id="colIdcom" prefWidth="75.0" text="id" visible="false" />
+                  <TableColumn id="nom_user" fx:id="ColNomuserc" prefWidth="75.0" text="Utilisateur" />
+                  <TableColumn id="description" fx:id="ColDescriptionc" prefWidth="118.0" text="Description" />
+                  <TableColumn id="date" fx:id="ColDatec" prefWidth="184.0" text="Date de création" />
+               </columns>
+            </TableView>
+            <Button layoutX="619.0" layoutY="163.0" mnemonicParsing="false" onAction="#selectPostcom" style="-fx-background-color: black;" stylesheets="@GamesStyle.css" text="⟲ Commentaires" visible="false" />
+            <Button layoutX="672.0" layoutY="163.0" mnemonicParsing="false" onAction="#deletecom" style="-fx-background-color: #d7b14a;" stylesheets="@GamesStyle.css" text="Supprimer Commentaire Sélectionné" />
+            <Button layoutX="912.0" layoutY="463.0" mnemonicParsing="false" onAction="#updatecom" style="-fx-background-color: #d7b14a;" stylesheets="@GamesStyle.css" text="Modifier Commentaire" />
+            <TextField fx:id="mod_descriptionc" layoutX="676.0" layoutY="435.0" prefHeight="91.0" prefWidth="211.0" promptText="description comentaire" visible="false" />
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="21.0" prefWidth="162.0" text="Postes" textFill="#d7b14a">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="672.0" layoutY="122.0" prefHeight="35.0" prefWidth="257.0" text="Commentaires" textFill="#d7b14a">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfsujet" layoutX="87.0" layoutY="94.0" promptText="sujet" />
+            <TextField fx:id="tfdescription" layoutX="87.0" layoutY="133.0" prefWidth="150.0" promptText="description" />
+            <TextField fx:id="tfcommunaute" layoutX="360.0" layoutY="81.0" promptText="communaute" />
+            <TextField fx:id="tfnomuser" layoutX="87.0" layoutY="55.0" promptText="nom_user" />
+            <Button fx:id="buttonupload" layoutX="516.0" layoutY="120.0" mnemonicParsing="false" onAction="#upload" style="-fx-background-color: #d7b14a;" text="..." />
+            <Button layoutX="315.0" layoutY="163.0" mnemonicParsing="false" onAction="#addpostback" prefHeight="26.0" prefWidth="60.0" text="Ajouter" visible="false" />
+            <Button layoutX="385.0" layoutY="163.0" mnemonicParsing="false" onAction="#updatepostback" style="-fx-background-color: #d7b14a;" text="Modifier" />
+            <Button layoutX="454.0" layoutY="163.0" mnemonicParsing="false" onAction="#deletepostback" style="-fx-background-color: #d7b14a;" text="Supprimer" />
+            <TextField fx:id="tfimagep" layoutX="360.0" layoutY="120.0" promptText="image" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom User" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sujet" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+            <Text fill="WHITE" layoutX="276.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Communauté" />
+            <Text fill="WHITE" layoutX="279.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" />
+            <Button layoutX="966.0" layoutY="14.0" mnemonicParsing="false" onAction="#ExitScene" style="-fx-background-color: #ff0000;" text="Quitter" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtArea" layoutX="676.0" layoutY="430.0" prefHeight="91.0" prefWidth="225.0" />
+            <TextField fx:id="searchBar" layoutX="13.0" layoutY="226.0" onKeyTyped="#please_work" prefHeight="26.0" prefWidth="646.0" promptText="Rechercher..." />
+            <Label layoutX="568.0" layoutY="24.0" prefWidth="314.0" text="FANCY TRADE" textFill="#efefee">
+               <font>
+                  <Font name="Monotype Corsiva" size="48.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="99.0" fitWidth="150.0" layoutX="934.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/lgooo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

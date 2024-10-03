@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MespostesController">
+   <children>
+      <ScrollPane fx:id="scrollpane" layoutX="48.0" layoutY="203.0" prefHeight="548.0" prefWidth="479.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <TextField fx:id="tftitre" layoutX="561.0" layoutY="324.0" prefHeight="51.0" prefWidth="434.0" />
+      <TextArea fx:id="tfdesc" layoutX="561.0" layoutY="429.0" prefHeight="195.0" prefWidth="200.0" />
+      <ComboBox fx:id="combodomaine" layoutX="567.0" layoutY="654.0" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #D7B14A;" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="770.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="784.0" layoutY="654.0" mnemonicParsing="false" onAction="#img" style="-fx-background-color: #D7B14A;" text="joindre image" />
+      <Button layoutX="567.0" layoutY="724.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #D7B14A;" text="Modifier" />
+      <Text fill="#d0b104" layoutX="48.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vos Postes" wrappingWidth="209.42578125">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text fill="#d0b104" layoutX="48.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliquez pour modifier">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fill="#d0b104" layoutX="561.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#d0b104" layoutX="563.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu du poste">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label layoutX="548.0" layoutY="70.0" prefWidth="314.0" text="FANCY TRADE" textFill="#efefee">
+         <font>
+            <Font name="Monotype Corsiva" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="863.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/lgooo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

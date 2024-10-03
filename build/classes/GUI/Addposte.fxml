@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddposteController">
+   <children>
+      <ComboBox fx:id="combodomaine1" layoutX="364.0" layoutY="618.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="tftitre" layoutX="364.0" layoutY="228.0" prefHeight="68.0" prefWidth="436.0" />
+      <TextArea fx:id="tfdesc" layoutX="364.0" layoutY="341.0" prefHeight="245.0" prefWidth="436.0" />
+      <ImageView fx:id="tfimage" fitHeight="83.0" fitWidth="200.0" layoutX="528.0" layoutY="678.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#d0b104" layoutX="223.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie " wrappingWidth="127.47091674804688">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#d0b104" fontSmoothingType="LCD" layoutX="241.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" wrappingWidth="110.40000000000009">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_select_image" layoutX="364.0" layoutY="702.0" mnemonicParsing="false" onAction="#btn_image_action" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: #D7B14A;" text="Ajouter Image" textFill="#070600">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="898.0" layoutY="746.0" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #D7B14A;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="#d0b104" fontSmoothingType="LCD" layoutX="241.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu du poste" wrappingWidth="110.40000000000009">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#d0b104" fontSmoothingType="LCD" layoutX="241.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un nouveau poste" wrappingWidth="558.3375549316406">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Text>
+      <Label layoutX="241.0" layoutY="36.0" prefWidth="503.0" text="FANCY TRADE" textFill="#efefee">
+         <font>
+            <Font name="Monotype Corsiva" size="72.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="849.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/lgooo.png" />
+         </image>
+      </ImageView>
+      <Text fill="#d0b104" layoutX="223.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="127.47091674804688">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
